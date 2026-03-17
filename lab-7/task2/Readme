@@ -1,0 +1,39 @@
+# Task 2 – Object-Oriented Programming in Python
+
+## Overview
+This project demonstrates OOP concepts in Python through an Animal class hierarchy.
+
+## Structure
+```
+task2/
+    models.py   # Class definitions
+    main.py     # Usage demonstration
+    README.md   # This file
+```
+
+## Classes
+
+### `Animal` (Base Class)
+- **Attributes:** `name`, `age`, `color`
+- **Methods:** `speak()`, `describe()`, `__str__()`
+
+### `Dog(Animal)` (Child Class)
+- **Extra attribute:** `breed`
+- **Overrides:** `speak()` → returns `"Woof!"`
+- **Unique method:** `fetch()`
+
+### `Cat(Animal)` (Child Class)
+- **Extra attribute:** `is_indoor`
+- **Overrides:** `speak()` → returns `"Meow!"`
+- **Unique method:** `purr()`
+
+## Concepts Demonstrated
+- **Inheritance** – `Dog` and `Cat` extend `Animal`
+- **Method Overriding** – `speak()` returns different values per class
+- **Polymorphism** – iterating a list of mixed objects and calling `speak()`
+- **Modules** – classes defined in `models.py`, imported into `main.py`
+
+## How to Run
+```bash
+python main.py
+```
